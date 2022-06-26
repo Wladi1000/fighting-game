@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fighting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    *{
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', cursive;
+    }
+  </style>
+</head>
+<body>
+  <!-- red container -->
+  <div style="position: relative; display: inline-block;">
+    <!-- smaller red container -->
+    <div style="
+      width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    "
+    >
+      <!-- Player Healt -->
+      <div style="position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      border-top: #f6f6f6 4px solid;
+      border-bottom: #f6f6f6 4px solid;
+      border-left: #f6f6f6 4px solid;
+      "
+      >
+        <div style="
+          background-color: red;
+          height: 30px;
+          width: 100%;
+        "
+        ></div>
+        <div id="playerHealt" 
+          style="position: absolute;
+          background-color: #818CF8;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          /* border: #f6f6f6 4px solid; */
+        "
+        ></div>
+      </div>
+      <!-- Timer -->
+      <div style="
+        background-color: black;
+        height: 50px;
+        width: 100px;
+        border: #f6f6f6 4px solid;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f6f6f6;
+        font-size: 25px;
+      "
+      id="timer"
+      >10</div>
+      <!-- Enemy Healt -->
+      <div style="position: relative;
+      width: 100%;
+      border-top: #f6f6f6 4px solid;
+      border-bottom: #f6f6f6 4px solid;
+      border-right: #f6f6f6 4px solid;
+      "
+      >
+        <div style="
+          background-color: red;
+          height: 30px;
+          width: 100%;
+        "
+        ></div>
+        <div id="enemyHealt" 
+          style="
+          position: absolute;
+          background-color: #818CF8;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        "
+        ></div>
+      </div>
+    </div>
+    <div style="
+      position: absolute; 
+      color: aliceblue; 
+      /* background-color: blueviolet; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      font-size: 70px;
+      display: none;
+      "
+      id="displayText"
+    ></div>
+    <!-- Game Display -->
+    <canvas></canvas>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./scripts/functions.js"></script>
+  <script src="./scripts/classes.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
