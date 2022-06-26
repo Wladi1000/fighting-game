@@ -231,10 +231,10 @@ function animate(){
     enemy.takeHit();
     player.isAttacking = false;
 
-    // document.getElementById('enemyHealt').style.width = enemy.healt + '%';
-    gsap.to('#enemyHealt', {
-      width: player.healt + '%'
-    })
+    document.getElementById('enemyHealt').style.width = enemy.healt + '%';
+    // gsap.to('#enemyHealt', {
+    //   width: player.healt + '%'
+    // })
   }
 
   // detect enemy attack colision
@@ -245,10 +245,10 @@ function animate(){
     player.takeHit();
     enemy.isAttacking = false;
 
-    // document.getElementById('playerHealt').style.width = player.healt + '%';
-    gsap.to('#playerHealt', {
-      width: player.healt + '%'
-    })
+    document.getElementById('playerHealt').style.width = player.healt + '%';
+    // gsap.to('#playerHealt', {
+    //   width: player.healt + '%'
+    // })
   }
 
   // End game based on healt
